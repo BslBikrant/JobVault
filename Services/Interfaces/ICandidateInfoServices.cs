@@ -1,10 +1,10 @@
-﻿using JobVault.API.Models.RequestModel;
-using Microsoft.AspNetCore.Mvc;
+﻿using JobVault.API.Models.ResponseModel;
+using JobVault.Entities;
 
 namespace JobVault.Services.Interfaces
 {
     public interface ICandidateInfoServices
     {
-        Task<IActionResult>saveCandidateInfo(CandidateInfoRequestModel requestModel);
+        Task<ResponseModel> saveCandidateInfo(CandidateEntities requestModel);
     }
 }
